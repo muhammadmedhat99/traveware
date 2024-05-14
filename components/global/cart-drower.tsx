@@ -47,7 +47,7 @@ export const CartDrower = ({}: CartDrowerProps) => {
   return (
     <Drawer>
       <DrawerTrigger asChild>
-        <Button variant="secondary" className="w-12 h-12 p-0 relative">
+        <Button variant="default" className="w-12 h-12 p-0 relative">
           <span className="absolute -top-3 -right-3 w-5 h-5 bg-red-600 rounded-full text-white">
             {totalItems}
           </span>
