@@ -38,6 +38,15 @@ export default function Home() {
           )
           .sort((a, b) => a.price - b.price)
       );
+      console.log(
+        allProducts
+          .filter(
+            (item) =>
+              item.title.toLowerCase().includes(searchFilter) &&
+              item.price >= +rangeOption
+          )
+          .sort((a, b) => a.price - b.price)
+      );
     } else if (filterOption == "name") {
       setProductsAfterFilter(
         allProducts

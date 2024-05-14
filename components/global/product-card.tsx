@@ -55,9 +55,6 @@ export const ProductCard = ({
       <CardContent className="flex items-center justify-between flex-wrap md:flex-nowrap">
         <div className="flex items-end gap-1.5">
           <span className="font-semibold text-slate-800 text-sm">${price}</span>
-          <span className="line-through text-slate-400 text-xs">
-            ${oldPrice}
-          </span>
         </div>
 
         <Button variant="outline" onClick={onAddToCart}>

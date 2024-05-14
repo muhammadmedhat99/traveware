@@ -31,7 +31,9 @@ export const ProductsSearch = ({
       <Input
         className="w-fit"
         type="text"
-        placeholder="Search"
+        name="search"
+        placeholder="Search..."
+        defaultValue=""
         onChange={handleSearch}
       />
       <div className="flex items-center gap-0.5">
@@ -42,7 +44,7 @@ export const ProductsSearch = ({
             className="border-none w-fit shadow-none slider"
             min="0"
             max="1749"
-            defaultValue={+rangeOption}
+            defaultValue={0}
             onChange={(e) => setRangeOption(e.target.value)}
           />
           <span className="absolute left-1/2 -translate-x-1/2 -bottom-5 text-xs">
